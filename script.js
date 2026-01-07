@@ -22,30 +22,33 @@ function renderHasSongs() {
   noSongsElement.classList.add("no-songs_hidden");
 }
 
-function addSong(artistValue, titleValue) {
+function renderSongElement(artist, title) {
+  const songEl = createSongElement(artist, title);
+  songsContainer.append(songEl);
+  renderHasSongs();
+}
+
+function createSongElement(artist, title) {
   const songElement = songTemplate.cloneNode(true);
 
   const artistElement = songElement.querySelector(".song__artist");
-  artistElement.textContent = artistValue;
+  artistElement.textContent = artist;
 
   const titleElement = songElement.querySelector(".song__title");
-  titleElement.textContent = titleValue;
+  titleElement.textContent = title;
 
-  songsContainer.append(songElement);
   return songElement;
 }
 
 addSongForm.addEventListener("submit", function (evt) {
   evt.preventDefault();
 
-  addSong(artist.value, title.value);
-  renderHasSongs();
+  renderSongElement(artist.value, title.value);
 
   artist.value = "";
   title.value = "";
 });
 
 initialSongs.forEach((song) => {
-  renderHasSongs();
-  addSong(song.artist, song.title);
+  renderSongElement(song.artist, song.value);
 });
