@@ -1,5 +1,7 @@
 # Playlist Builder
 
+![Project Screenshot](./images/Screenshot.png)
+
 ## Project Overview 📊
 
 A simple front-end project that lets users build a playlist by adding songs through a form. The app renders song cards dynamically using an HTML `<template>`, and updates the UI to hide the “No songs added” message once songs exist.
