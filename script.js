@@ -38,9 +38,14 @@ function createSongElement(artist, title) {
   titleElement.textContent = title;
 
   const songLikeBtn = songElement.querySelector(".song__button_type_like");
-  songLikeBtn.addEventListener("click", function () {
-    console.log("like button clicked");
-    songLikeBtn.classList.toggle("song__button_active")
+  songLikeBtn.addEventListener("click", function (evt) {
+    evt.target.classList.toggle("song__button_active");
+  });
+
+  const songDeleteBtn = songElement.querySelector(".song__button_type_delete");
+  songDeleteBtn.addEventListener("click", function () {
+    // Remova o elemento song
+    songElement.remove("songElement");
   });
 
   return songElement;
