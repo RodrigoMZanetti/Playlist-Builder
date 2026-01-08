@@ -37,6 +37,12 @@ function createSongElement(artist, title) {
   const titleElement = songElement.querySelector(".song__title");
   titleElement.textContent = title;
 
+  const songLikeBtn = songElement.querySelector(".song__button_type_like");
+  songLikeBtn.addEventListener("click", function () {
+    console.log("like button clicked");
+    songLikeBtn.classList.toggle("song__button_active")
+  });
+
   return songElement;
 }
 
