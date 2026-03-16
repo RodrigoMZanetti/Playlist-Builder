@@ -1,72 +1,78 @@
 # Playlist Builder
 
+## Live Demo
+
+https://rodrigomzanetti.github.io/Playlist-Builder/
+
+## Preview
+
 ![Project Screenshot](./images/Screenshot.png)
 
-## Project Overview 📊
+## Overview
 
-A simple front-end project that lets users build a playlist by adding songs through a form. The app renders song cards dynamically using an HTML `<template>`, and updates the UI to hide the “No songs added” message once songs exist.
+Playlist Builder is a simple front-end application that allows users to create and manage a music playlist through a form interface. Songs are dynamically rendered in the interface using an HTML template and JavaScript DOM manipulation.
 
-## Features ✨
+The project focuses on practicing template cloning, form handling, and dynamic UI updates in a clean and modular way using vanilla JavaScript.
 
-• **Dynamic rendering from an array** (`initialSongs`)
-• **DOM manipulation with templates** (`<template id="song-template">`)
-• **Form handling** with `submit` event + `preventDefault()`
-• **UI state control** using CSS classes (`no-songs_hidden`)
-• **Clean, reusable function**: `addSong(artistValue, titleValue)`
-• Automatically clears form inputs after adding a song
+## Features
 
-## Technologies Used 🛠️
+- Dynamic rendering of songs from an array (`initialSongs`)
+- DOM manipulation using HTML templates (`<template>`)
+- Form handling using `submit` events and `preventDefault()`
+- Dynamic UI updates when new songs are added
+- Automatic clearing of form inputs after submission
+- Conditional UI state management for empty playlist message
 
-• **HTML5**
-• **CSS3**
-• **JavaScript (Vanilla JS)**
+## Technologies Used
 
-## Project Structure 🗂️
+- HTML5 – semantic structure and template usage
+- CSS3 – layout and visual styling
+- JavaScript (Vanilla JS) – DOM manipulation and dynamic behavior
 
-• index.html
-• style.css
-• script.js
+## Project Structure
 
-## How It Works ▶️
+Playlist-Builder/
 
-1. Rendering Songs
+- index.html – main application markup
+- style.css – project styles
+- script.js – JavaScript logic and DOM interactions
+- images/ – project assets
 
-Songs are rendered by cloning a template:
+## How to Run the Project
 
-• Clone the `.song` node from the template
-• Fill the artist and title text
-• Append the result into `.songs-container`
+- Clone the repository
+  git clone https://github.com/RodrigoMZanetti/Playlist-Builder.git
 
-2. Empty State Message
+- Navigate to the project folder
+  cd Playlist-Builder
 
-The “No songs added” message is controlled by a CSS class:
+- Open the project
+  Open **index.html** in your browser or run a local server if preferred.
 
-• When songs exist, the project adds: `.no-songs_hidden`
-• That class applies `display: none` to hide the message
+## Status
 
-## Getting Started ▶️
+- Completed as part of front-end development training.
 
-1. Download or clone the project
-2. Open `index.html` in your browser
-3. Add songs using the form
+## Problem Solving
 
-No build tools required.
+- One of the main challenges in this project was dynamically rendering song cards while keeping the code reusable and easy to maintain. This was solved by using the HTML `<template>` element and cloning its content when new songs are added.
 
-## Current Behavior Notes 📝
+- Another challenge involved managing the empty playlist state. The interface needed to display a “No songs added” message until at least one song existed. This behavior was controlled through conditional DOM updates and CSS class toggling.
 
-• The playlist loads with a predefined list (`initialSongs`)
-• The “Clear playlist” button exists in HTML but is not implemented yet (it is disabled by default)
-• The “Like” button is styled but does not have JS behavior yet
+## What I Learned
 
-## Next Improvements (Roadmap) 📌
+During this project I practiced:
 
-• Enable and implement **Clear playlist**
-• Add **Like** toggle functionality (active/inactive)
-• Add input validation (prevent empty submissions)
-• Prevent duplicate songs (optional)
-• Save playlist to **localStorage** so it persists after refresh
+- Working with the HTML `<template>` element
+- Dynamically rendering content using JavaScript
+- Handling form submissions with event listeners
+- Managing UI state using DOM class manipulation
+- Writing reusable functions for DOM updates
 
 ## Author
 
-• GitHub: https://github.com/RodrigoMZanetti
-• LinkedIn: https://www.linkedin.com/in/rodrigomaturanozanetti/
+GitHub  
+https://github.com/RodrigoMZanetti
+
+LinkedIn  
+https://www.linkedin.com/in/rodrigomaturanozanetti/
