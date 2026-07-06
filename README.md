@@ -1,78 +1,33 @@
 # Playlist Builder
 
+A front-end application for creating and managing a music playlist. Users can add songs via a form, like favorites, delete individual tracks, or clear the entire playlist.
+
 ## Live Demo
 
 https://rodrigomzanetti.github.io/Playlist-Builder/
 
 ## Preview
 
-![Project Screenshot](./images/Screenshot.png)
+![Screenshot](./images/Screenshot.png)
 
-## Overview
+## Tech Stack
 
-Playlist Builder is a simple front-end application that allows users to create and manage a music playlist through a form interface. Songs are dynamically rendered in the interface using an HTML template and JavaScript DOM manipulation.
-
-The project focuses on practicing template cloning, form handling, and dynamic UI updates in a clean and modular way using vanilla JavaScript.
+- **Frontend:** JavaScript (Vanilla), HTML5, CSS3
 
 ## Features
 
-- Dynamic rendering of songs from an array (`initialSongs`)
-- DOM manipulation using HTML templates (`<template>`)
-- Form handling using `submit` events and `preventDefault()`
-- Dynamic UI updates when new songs are added
-- Automatic clearing of form inputs after submission
-- Conditional UI state management for empty playlist message
+- Add songs to the playlist via a form
+- Like and unlike individual songs
+- Delete individual songs from the playlist
+- Clear the entire playlist with one click
+- Empty state message when no songs are present
 
-## Technologies Used
+## Running Locally
 
-- HTML5 – semantic structure and template usage
-- CSS3 – layout and visual styling
-- JavaScript (Vanilla JS) – DOM manipulation and dynamic behavior
+Clone the repository and open `index.html` in your browser.
 
-## Project Structure
-
-Playlist-Builder/
-
-- index.html – main application markup
-- style.css – project styles
-- script.js – JavaScript logic and DOM interactions
-- images/ – project assets
-
-## How to Run the Project
-
-- Clone the repository
-  git clone https://github.com/RodrigoMZanetti/Playlist-Builder.git
-
-- Navigate to the project folder
-  cd Playlist-Builder
-
-- Open the project
-  Open **index.html** in your browser or run a local server if preferred.
-
-## Status
-
-- Completed as part of front-end development training.
-
-## Problem Solving
-
-- One of the main challenges in this project was dynamically rendering song cards while keeping the code reusable and easy to maintain. This was solved by using the HTML `<template>` element and cloning its content when new songs are added.
-
-- Another challenge involved managing the empty playlist state. The interface needed to display a “No songs added” message until at least one song existed. This behavior was controlled through conditional DOM updates and CSS class toggling.
-
-## What I Learned
-
-During this project I practiced:
-
-- Working with the HTML `<template>` element
-- Dynamically rendering content using JavaScript
-- Handling form submissions with event listeners
-- Managing UI state using DOM class manipulation
-- Writing reusable functions for DOM updates
+Optional: use VS Code Live Server for a better local experience.
 
 ## Author
 
-GitHub  
-https://github.com/RodrigoMZanetti
-
-LinkedIn  
-https://www.linkedin.com/in/rodrigomaturanozanetti/
+Rodrigo Zanetti — [LinkedIn](https://linkedin.com/in/rodrigomaturanozanetti) · [GitHub](https://github.com/RodrigoMZanetti)

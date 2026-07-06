@@ -75,5 +75,5 @@ addSongForm.addEventListener("submit", function (evt) {
 });
 
 initialSongs.forEach((song) => {
-  renderSongElement(song.artist, song.value);
+  renderSongElement(song.artist, song.title);
 });

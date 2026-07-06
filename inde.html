@@ -1,20 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
-    <title>Construtor de Playlist</title>
+    <title>Playlist Builder</title>
   </head>
   <body>
     <header class="header">
       <img
         src="https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_logo-black-eng.png"
-        alt="Logo da TripleTen"
+        alt="TripleTen logo"
         class="header__logo"
       />
-      <p class="header__logo-sub">Construtor de Playlist</p>
+      <p class="header__logo-sub">Playlist Builder</p>
     </header>
     <main class="container">
       <div class="cover">
@@ -23,30 +23,28 @@
       </div>
       <div class="block">
         <form class="form" id="add-song-form" name="addSongForm">
-          <h2 class="form__title">Adicionar música</h2>
+          <h2 class="form__title">Add Song</h2>
           <fieldset class="form__fieldset">
             <input
               type="text"
-              placeholder="Título da música"
+              placeholder="Song title"
               class="form__input"
               id="song-title-input"
             />
             <input
               type="text"
-              placeholder="Artista"
+              placeholder="Artist"
               class="form__input"
               id="song-artist-input"
             />
-            <button type="submit" class="form__submit-btn button">
-              Adicionar
-            </button>
+            <button type="submit" class="form__submit-btn button">Add</button>
           </fieldset>
         </form>
       </div>
       <div class="block">
         <h2>Playlist</h2>
         <div class="no-songs">
-          <p class="no-songs__text">Nenhuma música adicionada</p>
+          <p class="no-songs__text">No music added</p>
         </div>
         <ul class="songs-container">
           <template id="song-template">
@@ -67,7 +65,7 @@
           </template>
         </ul>
         <button class="block__button button" id="clear-playlist-btn" disabled>
-          Limpar playlist
+          Clear playlist
         </button>
       </div>
     </main>
